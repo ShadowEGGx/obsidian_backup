@@ -239,7 +239,7 @@ The **ER Model** is a conceptual model that is used to describe the structure an
 ![[Pasted image 20250109201049.png]]
 
 #### Entity
-An Entity may be an object with a physical existence – a particular person, car, house, or employee – or it may be an object with a conceptual existence – a company, a job, or a university course.
+An Entity may be an *object with a physical existence* – a particular person, car, house, or employee – or it may be an *object with a conceptual existence* – a company, a job, or a university course.
 
 ##### Entity Set
 An Entity is an object of Entity Type and a ==set of all entities is called an entity set==. For Example, `E1` is an entity having Entity Type `Student` and the set of all students is called Entity Set. In ER diagram, Entity Type is represented as:
@@ -266,6 +266,63 @@ Suppose, a company stores a `Dependants` (Spouse, Children) data for its `Employ
 
 ##### Types of Attributes
 ###### Key Attribute
+The attribute which **uniquely identifies** each entity in the entity set. 
+For example `RollNo` is unique for each student in a `Student` database. In ER Diagram, the key attribute is represented by an *oval with an underline*.
+![[Pasted image 20250109204658.png]]
+
+###### Composite Attribute
+An attribute **composed of many other attributes** is called a composite attribute.
+For example, the `Address` attribute in the `Student` database may consist of the following attributes like `StreetNo`, `City`, `State`, `Country`, etc.
+![[Pasted image 20250109204858.png]]
+
+###### Multi-valued Attribute
+An attribute consisting of **more than one value** for a given entity.
+For example, `Phone_No` can be more than one for a given student. In ER Diagram, it is represented by a *double oval*.
+
+###### Derived Attribute
+An attribute that can be **derived from other attributes** of the entity type.
+For example, the `Age` of a student can be derived from their `DOB`. In ER Diagram, the derived attribute is represented by a *dashed oval*.
+
+**DIAGRAM TO SHOW ATTRIBUTES FOR A `Student` ENTITY TYPE**
+![[Pasted image 20250109205426.png]]
+
+#### Relationship Type, Relationship Set, Cardinality
+##### Relationship Type
+In DBMS, a **relationship type** represents the **association** between entity types. 
+For example, `Enrolled in` is a relationship type that exists between entity types `Student` and `Course`. In ER Diagrams, the relationship type is represented by a *diamond connecting the entities with lines*.
+![[Pasted image 20250109205911.png]]
+
+##### Relationship Set
+A set of relationships of the same type is called a **relationship set**. 
+The following relationship depicts S1 enrolled as C2, S2 enrolled as C1 and S3 as registered in C3. (*S - student; E = enrolled in; C = course*)
+![[Pasted image 20250109210306.png]]
+
+###### Degree in a Relationship Set
+The number of different entity sets participating in a relationship set is called the degree of the relationship set.
+1. **Unary Relationship**: When there is only ONE entity set participating in a relation.
+   *Example:* A person is married to only one person.
+   ![[Pasted image 20250109210542.png]]
+2. **Binary Relationship**: When there are TWO entities' set participating in a relationship.
+   *Example:* A student enrolled to a course.
+   ![[Pasted image 20250109210912.png]]
+3. **Ternary Relationship:** When there are three entities' set participating in a relationship.
+4. **N-ary relationship:** When there are *n* entities' set participating in a relationship.
+
+##### Cardinality
+The number of times an entity of an entity set participates in a relationship set is known as **cardinality**. Cardinality can be of different types: 
+1. **One-to-One:** When each entity in each entity set can take part only once in the relationship.
+   *Example:* A Surgeon is head by the Head of Department.
+   ![[Pasted image 20250109211626.png]]![[Pasted image 20250109211950.png]]
+2. **One-to-Many:** In one-to-many mapping as well where each entity can be related to more than one entity and the total number of tables that can be used in this is 2.
+   *Example:* One surgeon department has many surgeons.
+   ![[Pasted image 20250109211727.png]]![[Pasted image 20250109212009.png]]
+3. **Many-to-One:** When entities in one entity set can take part only once in the relationship set and entities in other entity sets can take part more than once in the relationship set.
+   *Example:* Many patients are treated by one doctor.
+   ![[Pasted image 20250109211805.png]]![[Pasted image 20250109212025.png]]
+4. **Many-to-Many:** Many instances of one entity are related to many instances of another entity.
+   *Example:* Many doctors treat many different diseases.
+   ![[Pasted image 20250109211846.png]]![[Pasted image 20250109212034.png]]
+
 
 ## Keys
 In DBMS, **keys** are *attributes* (or sets of attributes) used to uniquely identify rows (*tuples*) in a table. They play a crucial role in ensuring data integrity and establishing relationships between tables in a relational database. 
