@@ -226,19 +226,46 @@ A **data model** in DBMS is the concept of tools that are developed to summarise
 	- Organizes data in a tree-like structure.
 	- Data is represented as parent-child relationships.
 	- *Example*: File systems where folders (parent) contain files (children).
-1. **Network Data Model**
+5. **Network Data Model**
+	- Organises data as a graph structure, with records connected with links.
+	- Allows many-to-many relationships
+	- *Example:* Social media networks where an user is connected with many friends.
 
 ## Entity-Relationship (ER) Model
 The **ER Model** is a conceptual model that is used to describe the structure and relationships between data in a database. It helps in visually representing the logical structure of a database and provides a blueprint for creating a database schema.
 [ER Model was introduced by Peter Chen in 1976]
 
 ### Components of an ER Model
-1. **Entities**
-	- An *entity* represents a real-life object or concept in the database.
-	- Examples can be `Student`, `Employee`, etc.
-	- An entity is represented by a **Rectange** in an ER diagram.
-	- Each entity typically has attributes that describe it (e.g., a `Student` entity may have attributes like `StudentID`, `Name`, `Age`, etc.).
-2. 
+![[Pasted image 20250109201049.png]]
+
+#### Entity
+An Entity may be an object with a physical existence – a particular person, car, house, or employee – or it may be an object with a conceptual existence – a company, a job, or a university course.
+
+##### Entity Set
+An Entity is an object of Entity Type and a ==set of all entities is called an entity set==. For Example, `E1` is an entity having Entity Type `Student` and the set of all students is called Entity Set. In ER diagram, Entity Type is represented as:
+![[Pasted image 20250109201739.png]]
+
+[We can represent the entity set in ER Diagram but can’t represent entity in ER Diagram because entity is row and column in the relation and ER Diagram is graphical representation of data.]
+
+##### Types of Entity
+There are two types of entities:
+###### Strong Entity
+A **Strong Entity** is a type of entity that has a *key attribute*. A strong entity doesn't depend on any other entity in the schema. It has a primary key, that helps in identifying it uniquely, and it is represented by a *rectangle*. These are called *Strong Entity Types*.
+
+###### Weak Entity
+A **weak entity** is an entity that cannot exist without the help of a related strong entity. It typically doesn't have a primary key of its own, and relies on the primary key of the related entity. It is represented by *double rectangles*.
+
+**The relationship between the weak entity type and its identifying strong entity type is called identifying relationship and it is represented by a double diamond.**
+
+**Example:**
+Suppose, a company stores a `Dependants` (Spouse, Children) data for its `Employees`. Now, the dependants can't exist without the employee. So Dependent will be a **Weak Entity Type** and Employee will be Identifying Entity type for Dependent, which means it is **Strong Entity Type**.
+![[Pasted image 20250109203636.png]]
+
+#### Attributes
+**Attributes** are the properties that define the entity type. For example, `Roll_No`, `Name`, `DOB`, `Age`, `Address`, and `Mobile_No` are the attributes that define entity type `Student`. In ER diagram, the attribute is represented by an *oval*. 
+
+##### Types of Attributes
+###### Key Attribute
 
 ## Keys
 In DBMS, **keys** are *attributes* (or sets of attributes) used to uniquely identify rows (*tuples*) in a table. They play a crucial role in ensuring data integrity and establishing relationships between tables in a relational database. 
