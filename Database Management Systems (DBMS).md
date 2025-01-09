@@ -4,7 +4,7 @@
 - Basics of keys
 - Normalisation (1NF, 2NF, 3NF, BCNF)
 - Transaction Control and Concurrency 
-- SQL (DDL, DML, DCL)
+- SQL (DDL, DML, DCL) - Done today
 - Indexing
 
 
