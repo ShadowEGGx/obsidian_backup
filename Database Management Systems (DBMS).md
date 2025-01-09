@@ -37,7 +37,7 @@ An unstructured database is opposite of a structured Data. E.g. Webpages.
 A **Database Management System (DBMS)** is a software that manages a collection of interrelated data and provides tools to store, retrieve and control access to the database.
 
 For example, MySQL, PostgreSQL, OracleDB are examples of DBMS programs. 
-SQL stands for Structured Query Language
+SQL stands for **Structured Query Language**.
 
 #### Goals of using DBMS:
 - **Efficient Data Storage and Retrieval**:  
@@ -59,14 +59,15 @@ A **file system** is a method of organizing, storing, and retrieving data on sto
 
 ### File Systems vs DBMS
 
-| Aspect         | File System                                      | DBMS                                                           |
-| -------------- | ------------------------------------------------ | -------------------------------------------------------------- |
-| Purpose        | To manage files and folders in a storage device. | Manages structured data in a database.                         |
-| Querying       | Requires manual data searching through the files | Provides fast searching with powerful query languages like SQL |
-| Data integrity |                                                  |                                                                |
-| Concurrency    |                                                  |                                                                |
-| Security       |                                                  |                                                                |
-| Scalability    |                                                  |                                                                |
+| Aspect         | File System                                                                                             | DBMS                                                           |
+| -------------- | ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Purpose        | To manage files and folders in a storage device.                                                        | Manages structured data in a database.                         |
+| Querying       | Requires manual data searching through the files                                                        | Provides fast searching with powerful query languages like SQL |
+| Data integrity | No built-in mechanisms to ensure data integrity.                                                        | Ensures data integrity through constraints (e.g. primary keys) |
+| Concurrency    | Limited support for concurrent access, i.e. a few number of users can access the file system at a time. | Handles multiple users accessing the database continuously.    |
+| Security       | Basic file permissions (read, write, execute)                                                           | Advanced security features like user roles and encryption.     |
+| Scalability    | Limited scalability for a large amounts of data.                                                        |                                                                |
+**Meaning of Scalability:** The ability of a database to handle increasing amounts of data, numbers of users, and types of requests without sacrificing performance or availability.
 
 ## 2 Tier Architecture
 ![[Pasted image 20250107095716.png]]
@@ -155,9 +156,9 @@ A three tier system is more secure, scalable and maintainable.
 
 
 ## Schema
-In the context of databases, a **schema** is the **structure** or **blueprint** that defines how data is organized, stored, and related in a database. It specifies the database's logical structure, including its tables, fields, data types, relationships, constraints, and other elements.
+In the context of databases, a **schema** is the **structure** or **blueprint** that defines how data is organised, stored, and related in a database. It specifies the database's logical structure, including its tables, fields, data types, relationships, constraints, and other elements.
 
-In a line: Schema = Logical Representation of a Database
+*In a line: Schema = Logical Representation of a Database*
 
 ### Example:
 **Student Database Schema**:
@@ -223,6 +224,9 @@ A **data model** in DBMS is the concept of tools that are developed to summarise
 	- It is stored in the form of files, records and other data structures.
 4. **Hierarchical Data Model**
 5. **Network Data Model**
+
+## Entity-Relationship (ER) Model
+The **ER Model** is a conceptual model that is used to describe the structure and relationships between data in a database. It helps in visually representing the logical structure of a database and provides a blueprint for creating a database schema.
 
 ## Keys
 In DBMS, **keys** are *attributes* (or sets of attributes) used to uniquely identify rows (*tuples*) in a table. They play a crucial role in ensuring data integrity and establishing relationships between tables in a relational database. 
