@@ -66,7 +66,7 @@ A **file system** is a method of organizing, storing, and retrieving data on sto
 | Data integrity | No built-in mechanisms to ensure data integrity.                                                        | Ensures data integrity through constraints (e.g. primary keys) |
 | Concurrency    | Limited support for concurrent access, i.e. a few number of users can access the file system at a time. | Handles multiple users accessing the database continuously.    |
 | Security       | Basic file permissions (read, write, execute)                                                           | Advanced security features like user roles and encryption.     |
-| Scalability    | Limited scalability for a large amounts of data.                                                        |                                                                |
+| Scalability    | Limited scalability for a large amounts of data.                                                        | Highly scalable to handle large and complex datasets.          |
 **Meaning of Scalability:** The ability of a database to handle increasing amounts of data, numbers of users, and types of requests without sacrificing performance or availability.
 
 ## 2 Tier Architecture
@@ -223,10 +223,22 @@ A **data model** in DBMS is the concept of tools that are developed to summarise
 	- All data in the database is stored physically on a secondary storage.
 	- It is stored in the form of files, records and other data structures.
 4. **Hierarchical Data Model**
-5. **Network Data Model**
+	- Organizes data in a tree-like structure.
+	- Data is represented as parent-child relationships.
+	- *Example*: File systems where folders (parent) contain files (children).
+1. **Network Data Model**
 
 ## Entity-Relationship (ER) Model
 The **ER Model** is a conceptual model that is used to describe the structure and relationships between data in a database. It helps in visually representing the logical structure of a database and provides a blueprint for creating a database schema.
+[ER Model was introduced by Peter Chen in 1976]
+
+### Components of an ER Model
+1. **Entities**
+	- An *entity* represents a real-life object or concept in the database.
+	- Examples can be `Student`, `Employee`, etc.
+	- An entity is represented by a **Rectange** in an ER diagram.
+	- Each entity typically has attributes that describe it (e.g., a `Student` entity may have attributes like `StudentID`, `Name`, `Age`, etc.).
+2. 
 
 ## Keys
 In DBMS, **keys** are *attributes* (or sets of attributes) used to uniquely identify rows (*tuples*) in a table. They play a crucial role in ensuring data integrity and establishing relationships between tables in a relational database. 
