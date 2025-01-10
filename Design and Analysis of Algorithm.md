@@ -120,7 +120,24 @@ for (i = 1; p < n; i++) {
 Here: $f(n) =$ 
 
 ```C
-for (i = 1; i < n; i*2) {
+for (i = 1; i < n; i+2) { 
 	smt;
 }
 ```
+
+
+2. How many times will `smt` be executed, when $n = k$
+```c
+for (i = 0; i < 1; i++) { // n+1
+	for (j = 0; j < 1; j++) { // n(n+1)
+		smt;
+	}
+```
+
+| `i` | `j`     | `smt` |
+| --- | ------- | ----- |
+| 0   | 0       | 0     |
+| 1   | 0, 1    | 1     |
+| 2   | 0, 1, 2 | 2     |
+| ... |         |       |
+| k   | k + 1   | k     |
