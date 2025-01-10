@@ -134,4 +134,47 @@ G2 = ({E}, {a, b}, {E}, {E -> E + E, E -> E * E, E -> a, E -> b})
 
 Since the string in LMD and RMD are equal, the grammar is ambiguous.
 
-2. 
+### Finite Automata
+#### What is Automata?
+The word **automata** comes from the Greek word, *autoquata* which means *self acting*.
+It defines a whole lot of different processes, like:
+1. Computation process
+2. Abstract process
+3. Statistical and mathematical process
+4. Application base operation
+5. Automatic system
+*A finite automata, for example, shows and defines the all the steps a computer does between taking input and storing it into its memory.*
+
+There are 2 types of automata:
+1. **Deterministic Finite Automata (DFA)**
+	- 
+2. **Non-deterministic Finite Automata (NFA)**
+
+In finite automata, the symbols are:
+
+**Finite Automata has 5-tuples (Q, Σ, δ, qₒ, F), where:**
+1. Q = {set of states}
+2. Σ = {input alphabets}
+3. δ = {transition array/transition diagram}
+4. qₒ = Initial state
+5. F = Final state
+
+In the above diagram
+Q = {$q_0, q_1, q_2, q_3$}
+Σ = {0, 1}
+δ = 
+q = $q_0$
+F = {}
+
+1. canvart NFA to DFA
+   step 1: write in tapal format
+   step 2: given NFA diagram to NFA transition table .
+
+| States | a = 0 | a = 1 |
+| ------ | ----- | ----- |
+| q0 =   |       |       |
+step 3. NFA TT to DFA TT
+
+| States | a = 0 | a = 1 |
+| ------ | ----- | ----- |
+| q0 =   |       |       |
