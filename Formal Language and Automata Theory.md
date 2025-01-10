@@ -159,6 +159,7 @@ In finite automata, the symbols are:
 4. qₒ = Initial state
 5. F = Final state
 
+![[WhatsApp Image 2025-01-10 at 11.40.20 AM.jpeg]]
 In the above diagram
 Q = {$q_0, q_1, q_2, q_3$}
 Σ = {0, 1}
