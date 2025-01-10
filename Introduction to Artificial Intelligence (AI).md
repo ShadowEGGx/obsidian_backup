@@ -83,3 +83,41 @@ Remember the characters of a Rational Agent by the following:
 	- *Example*: Autonomous cars that improve driving through reinforcement learning.
 	![[Pasted image 20250108101737.png]]
 
+#### Problem Formulation
+A *problem solving agent* have the following agendas:
+- They are **goal oriented**.
+- They measure their performance.
+
+A problem solving agent have the following phases:
+- Problem Formulation
+- Searching for a solution.
+- Action Execution
+
+1. **Problem formulation** is the process of deciding what deciding what actions it needs to consider while searching for a goal.
+2. The process of looking for a sequence of action to reach a goal is called **searching for solution**.
+3. **Action Execution** is the set of all possible actions the agent can perform.
+
+Problem formulation has the following stages:
+1. **Initial stage, S** 
+	- the starting state
+2. **Action**
+	- whatever path the agent chooses 
+	- returns the state of actions from all possible actions from S. 
+	- Written as *ACTIONS(S) = {a1, a2}*
+3. **Transition Model** 
+	- the set of all actions the agent does 
+	- *RESULT(S, a1) = S2; RESULT(S, a2) = S3*
+4. **State Space**
+	- A path in the state space is a sequence of states connected by a sequence of actions.
+	- *STATE SPACE = {S2, ... S9}*
+5. **Goal Test** 
+	- Whatever path the agent chooses to reach it's goal.
+6. **Path Cost**
+	- A function that assigns a numeric cost to each path.
+	- The agent chooses a cost function that reflects its own performance measure.
+	- *Cost of a path = a2 + a3 + a4*
+	- *Step cost = C(S, a, S')*. In light of the diagram, here *Step cost = C(S, a1, a2)*
+	![[Pasted image 20250110102938.png]]
+
+**EXAMPLE: The Romania Travel Problem**
+
