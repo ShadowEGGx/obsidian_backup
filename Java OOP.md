@@ -205,10 +205,10 @@ public class BufferedReaderExample {
 
 2. **Using `Scanner` class:** Another system defined class that is included in the `java.util` package in Java.
 	- **How to use `Scanner` class?**
-		- Import the `Scanner` class (use `*` to import every method in `java.util` package.
-		- Create a `Scanner` object.
+		- Import the `Scanner` class (use `*` to import every method in `java.util` package).
+		- Create a `Scanner` object, e.g. `sc`.
 		- Use the appropriate method (e.g., `nextInt()`, `nextDouble()`, `nextLine()`) to read the input using `System.in` for console input.
-		- Finally close the scanner using the `scanner.close()` method.
+		- Finally close the scanner using the `sc.close()` method [whatever object name was written in Scanner object].
 ```Java
 import java.util.Scanner;
 public class Scan {
