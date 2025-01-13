@@ -108,7 +108,7 @@ In machine learning, data is split into two main subsets: **train data** and **t
 	- Algorithms:
 	    - Logistic Regression
 	    - Support Vector Machines (SVM)
-	    - k-Nearest Neighbors (k-NN)
+	    - k-Nearest Neighbours (k-NN)
 	    - Decision Trees and Random Forests
 
 ### Unsupervised Machine Learning
@@ -120,7 +120,7 @@ In machine learning, data is split into two main subsets: **train data** and **t
 	- Groups data points into clusters based on their similarity.
 	- Examples:
 	    - Customer segmentation in marketing.
-	    - Organizing news articles by topic.
+	    - Organising news articles by topic.
 	- Algorithms:
 	    - k-Means Clustering
 	    - Hierarchical Clustering
@@ -128,14 +128,14 @@ In machine learning, data is split into two main subsets: **train data** and **t
 2. **Dimensionality Reduction**
 	- Reduces the number of features or variables in the dataset while retaining the most important information.
 	- Examples:
-	    - Visualizing high-dimensional data in 2D or 3D.
+	    - Visualising high-dimensional data in 2D or 3D.
 	    - Compressing images.
 	- Algorithms:
 	    - Principal Component Analysis (PCA)
-	    - t-Distributed Stochastic Neighbor Embedding (t-SNE)
+	    - t-Distributed Stochastic Neighbour Embedding (t-SNE)
 	    - Singular Value Decomposition (SVD)
 
-### **Comparison of Supervised and Unsupervised ML**
+### Comparison of Supervised and Unsupervised ML
 
 | **Aspect**           | **Supervised Learning**                         | **Unsupervised Learning**                    |
 | -------------------- | ----------------------------------------------- | -------------------------------------------- |
@@ -143,4 +143,10 @@ In machine learning, data is split into two main subsets: **train data** and **t
 | **Goal**             | Predict outcomes (Regression/Classification)    | Identify patterns or structures              |
 | **Common Use Cases** | Predictive tasks (e.g., house price prediction) | Exploratory tasks (e.g., grouping customers) |
 | **Evaluation**       | Accuracy, Precision, Recall, F1 Score           | Intra-cluster similarity, Explained Variance |
-EDA - Types
+### Outliers
+**Outliers** are data points in a dataset that deviate significantly from the other observations. They are unusually high or low values that do not fit the general pattern or trend of the data. These values may arise due to variability in measurement, experimental errors, or genuinely rare events.
+
+#### Characteristics of Outliers
+1. They are far away from the majority of the data points.
+2. They can distort statistical analyses and machine learning moderns
+3. 

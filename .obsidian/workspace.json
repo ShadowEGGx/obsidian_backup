@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Design and Analysis of Algorithm.md",
+                "file": "Exploratory Data Analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Design and Analysis of Algorithm"
+              "title": "Exploratory Data Analysis"
             }
           }
         ]
@@ -165,9 +165,9 @@
   },
   "active": "9fa899a8b6c77737",
   "lastOpenFiles": [
+    "Design and Analysis of Algorithm.md",
     "Exploratory Data Analysis.md",
     "DAA Lab.md",
-    "Design and Analysis of Algorithm.md",
     "Java OOP.md",
     "Formal Language and Automata Theory.md",
     "WhatsApp Image 2025-01-10 at 11.40.20 AM.jpeg",
