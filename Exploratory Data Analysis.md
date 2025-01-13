@@ -149,4 +149,99 @@ In machine learning, data is split into two main subsets: **train data** and **t
 #### Characteristics of Outliers
 1. They are far away from the majority of the data points.
 2. They can distort statistical analyses and machine learning moderns
-3. 
+3. They may represent valuable insights or noise, depending on the context.
+
+#### Types of Outliers
+
+1. **Univariate Outliers**:
+    - Outliers identified in one-dimensional data.
+    - Example: A person's height in a group of adults (e.g., 9 feet tall).
+2. **Multivariate Outliers**:
+    - Outliers found in multi-dimensional data that deviate in their combination of values.
+    - Example: A car with very high horsepower and very low fuel efficiency compared to others.
+3. **Global Outliers**:
+    - Values that are outliers in the entire dataset.
+    - Example: A house priced at $10 million in a dataset where most houses range from $200,000 to $500,000.
+4. **Contextual/Conditional Outliers**:
+    - Values that are unusual only in a specific context.
+    - Example: A temperature of 35°C is normal in summer but an outlier in winter.
+5. **Collective Outliers**:
+    - A group of data points that deviate significantly but may not be outliers individually.
+    - Example: A sudden cluster of low stock prices during a market crash.
+
+#### How to detect Outliers?
+- **Visual Methods**:
+    - **Box Plot**:
+        - Outliers appear as points outside the whiskers of the plot.
+    - **Scatter Plot**:
+        - Outliers can be identified as points far from the cluster.
+    - **Histogram**:
+        - Extreme values create distant bars.
+- **Statistical Methods**:
+    - **Z-Score**:
+        - Measures how far a data point is from the mean in terms of standard deviations.
+        - Formula: $Z = \frac{{x - \mu}}{{\sigma}}$
+        - Outliers typically have $∣Z∣>3$.
+    - **IQR (Interquartile Range)**:
+        - Outliers are values below $Q1 - 1.5 × \text{IQR}$ or above $Q3 + 1.5 × \text{IQR}$. 
+        - $\text{IQR} = Q3 - Q1$, where Q1 and Q3 are the 1st and 3rd quartiles, respectively.
+
+##### Interquartile Range (IQR)
+The **Interquartile Range (IQR)** is a measure of statistical dispersion and is used to detect outliers in a dataset. The IQR is calculated as the difference between the third quartile (Q3) and the first quartile (Q1), representing the middle 50% of the data.
+###### Steps to detect outliers using IQR
+- **Sort the Data**:
+    - Arrange the dataset in ascending order.
+- **Find the Quartiles**:
+    - **First Quartile (Q1)**: The median of the lower half of the data.
+    - **Third Quartile (Q3)**: The median of the upper half of the data.
+- **Calculate the IQR**:
+    - $\text{IQR} = Q3 - Q1$
+- **Determine the Outlier Thresholds**:
+    - **Lower Bound**: $Q1 - 1.5 \times \text{IQR}$
+    - **Upper Bound**: $Q3 + 1.5 \times \text{IQR}$
+- **Identify Outliers**:
+    - Any data point below the **lower bound** or above the **upper bound** is considered an outlier.
+
+**EXAMPLE**
+Let us consider the following dataset:
+10, 12, 15, 18, 22, 28, 35, 100
+
+**Step 1:** Sort the data in ascending order.
+**Step 2:** Find first quartile (Q1) and third quartile (Q2)
+		- Q1: Median of the lower half = $\frac{12 + 15}{2} = 13.5$
+		- Q3: Median of the upper half = $\frac{28 + 35}{2} = 31.5$
+**Step 3:** Calculate IQR:
+		- $\text{IQR} = Q3 − Q1 = 31.5 − 13.5 = 18$
+**Step 4:** Calculate **Outlier Thresholds**
+		- **Lower Bound**: $Q1 - 1.5 \times \text{IQR} = 13.5 - 1.5 \times 18 = -13.5$
+	    - **Upper Bound**: $Q3 + 1.5 \times \text{IQR} = 31.5 + 1.5 \times 18 = 58.5$
+**Step 5:** Identify Outliers:
+		- Data points below -13.5: None
+		- Data points above 58.5: 100
+	
+	- Hence the outlier here is 100.
+
+##### Box Plot
+A **box plot** (also called a box-and-whisker plot) is a graphical representation used to summarizs the distribution of a dataset and identify potential outliers. It provides insights into the dataset's central tendency, spread, and skewness.
+
+###### Key characters of a Box Plot
+- **Median (Q2)**:
+    - The middle value of the dataset (50th percentile).
+    - Represented by a line inside the box.
+- **Interquartile Range (IQR)**:
+    - The range between the first quartile (Q1) and the third quartile (Q3).
+    - Formula: $\text{IQR} = Q3 - Q1$
+    - The box spans from Q1 to Q3.
+- **Whiskers**:
+    - Extend from the box to the smallest and largest values that are within $1.5 \times \text{IQR}$ from Q1 and Q3, respectively.
+    - These indicate the "typical range" of the data.
+- **Outliers**:
+    - Data points outside the range defined by the whiskers:
+        - Below $Q1 - 1.5 \times \text{IQR}$
+        - Above $Q3 + 1.5 \times \text{IQR}$
+    - Represented as individual points or dots beyond the whiskers.
+
+###### Question:
+The marks of students in a maths class test are as follows:
+75, 80, 85, 92, 65, 78, 88, 98, 70, 72, 89, 91, 76, 79, 83, 89, 77, 87, 81
+Find the outliers, if any and then plot the box plot for the dataset.
