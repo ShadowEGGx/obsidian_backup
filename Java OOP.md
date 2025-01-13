@@ -41,7 +41,37 @@ class Program {
 #### Command Line Arguments
 **Command-line arguments** in Java are inputs passed to the program when it is executed via the command line or terminal. They allow users to provide information or data to the program during runtime without requiring user input during program execution.
 
+##### How to use them?
+1. **Stored in the `String[] args`**: The `args` array holds the command-line arguments as strings.
 
+2. **Passed During Execution:** Command-line arguments are passed after the program has been compiled, after the program name in the terminal, separated by spaces. `java Program args1 arg2 arg3`
+
+3. **Accessed via indexing**: The arguments may be accessed using array indices. Usage: `args[0], args[1], args[2], ...`
+
+4. **Count of arguments:** The length of the `args` array tells how many arguments the programmer has passed. Usage: `args.length`
+
+##### Example Program
+```java
+public class AddNumbers {
+    public static void main(String[] args) {
+        if (args.length >= 2) {
+            int num1 = Integer.parseInt(args[0]);
+            int num2 = Integer.parseInt(args[1]);
+            System.out.println("Sum: " + (num1 + num2));
+        } else {
+            System.out.println("Please provide two numbers as arguments!");
+        }
+    }
+}
+```
+###### Execution:
+```bash
+java AddNumbers 5 10
+```
+###### Output
+```Bash
+Sum: 15
+```
 
 #### Static and Non-Static Objects, Variables or Methods:
 - ###### Static Objects (or Members):
@@ -361,6 +391,76 @@ public class Main {
 - `this` can only be used on **non-static** methods or constructors since static methods do not operate on object instances.
 - When used in constructors, `this` must be the first statement. 
  
-#### `abstract` method in Java
+#### `abstract` keyword in Java
+The **`abstract`** keyword in Java is used to define classes and methods that are **incomplete** and are meant to be extended or implemented by other classes. It allows the user to establish a blueprint for classes, enforcing certain methods to be defined by any subclass.
 
-Interface = All the methods are `abstract`. Required for multiple inheritance.
+When the user declares an **abstract class**, a plan is set up for what all the objects created from its subclasses will have in common. Subclasses then *"fill in the blanks"* to create specific types of objects.
+
+##### Key points about `abstract` keyword:
+1. **Abstract Classes**: 
+	- An abstract class is a class which cannot be instantiated (i.e. objects cannot be created from it)
+	- It is meant to be extended by other classes.
+	- It may or may not contain `abstract` methods.
+```java
+abstract class ClassName {
+    // Abstract methods (no body)
+    abstract void methodName();
+    
+    // Concrete methods (with body)
+    void concreteMethod() {
+        System.out.println("This is a concrete method.");
+    }
+}
+```
+
+2. **Abstract Methods:**
+	- An abstract method is a method that is declared without a body (i.e. no implementation.)
+	- Subclasses must provide an implementation for all abstract methods of their superclass.
+```java
+abstract void methodName();
+```
+
+##### Example program using `abstract` keyword.
+```java
+// Abstract class
+abstract class Shape {
+    // Abstract method (no body)
+    abstract void draw();
+
+    // Concrete method (has body)
+    void description() {
+        System.out.println("This is a shape.");
+    }
+}
+
+// Subclass implementing the abstract method
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Drawing a Circle");
+    }
+}
+
+// Another subclass
+class Square extends Shape {
+    void draw() {
+        System.out.println("Drawing a Square");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Shape shape1 = new Circle();
+        shape1.draw(); // Output: Drawing a Circle
+
+        Shape shape2 = new Square();
+        shape2.draw(); // Output: Drawing a Square
+    }
+}
+```
+
+##### Key points to remember about `abstract` keyword
+1. Objects cannot be created from an abstract class.
+2. An abstract class can contain both `abstract` and `concrete` methods
+3. Abstract methods must be *declared within* an abstract class.
+4. Subclasses are required to implement all the abstract methods of the superclass, unless the subclass is also declared as `abstract`.
+5. In the concept of inheritance, if a subclass does not implement all abstract methods, it must also be declared abstract.
