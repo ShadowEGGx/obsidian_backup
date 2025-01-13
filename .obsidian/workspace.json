@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java OOP.md",
+                "file": "DAA Lab.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java OOP"
+              "title": "DAA Lab"
             }
           }
         ]
@@ -166,6 +166,7 @@
   "active": "9fa899a8b6c77737",
   "lastOpenFiles": [
     "Design and Analysis of Algorithm.md",
+    "Java OOP.md",
     "DAA Lab.md",
     "Formal Language and Automata Theory.md",
     "WhatsApp Image 2025-01-10 at 11.40.20 AM.jpeg",
@@ -182,7 +183,6 @@
     "Pasted image 20250109211950.png",
     "Pasted image 20250109211805.png",
     "Pasted image 20250109211727.png",
-    "Pasted image 20250109211626.png",
-    "Java OOP.md"
+    "Pasted image 20250109211626.png"
   ]
 }

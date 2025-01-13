@@ -62,3 +62,17 @@ else {
 l = mid + 1
 }
 ```
+
+### Bubble Sort
+create a bubble number (index 0) and compare with the adjacent number (index 1). depending on program, check whether the next number is larger or smaller than the bubble number. when bubble number < next number, the bubble passes to the next number, else when bubble number > next number, their places get swapped. This iteration continues until the whole array is sorted into descending or ascending order
+
+```Pseudocode
+for (i = 0; i < n; i++) {
+	for (j = 0; j < n - 1 - i; j++) {
+		if (a[j]) > a[j + 1]) {
+			temp = a[j];
+			a[j] = a[j ]
+			}
+	}
+}
+```
