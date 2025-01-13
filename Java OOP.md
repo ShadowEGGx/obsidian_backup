@@ -22,8 +22,6 @@ class Program {
 - A new program called `File_name.class` is created in the directory, if compiled successfully.
 - Then in the terminal write `java File_name` without any extensions. If the program is written correctly the output will be shown as "*Hello World*".
 
-###### STUDY Command Line Arguments
-
 #### Anatomy of the Program
 - Defined a class named `Program`. In Java, a class is always defined with a Capital starting letter.
 - `public static void main(System args[])`: The `main` method of the program.
@@ -40,7 +38,12 @@ class Program {
 	- `out` is a static field in `System` class, and it is an object of the `PrintStream` class, which is another built-in class in Java. It is *static* since it belongs to the class `System` and not to any instance of it. 
 	- `println` is the method of the `PrintStream` class that is used to print messages and to move to a new line.
 
-##### Static and Non-Static Objects, Variables or Methods:
+#### Command Line Arguments
+**Command-line arguments** in Java are inputs passed to the program when it is executed via the command line or terminal. They allow users to provide information or data to the program during runtime without requiring user input during program execution.
+
+
+
+#### Static and Non-Static Objects, Variables or Methods:
 - ###### Static Objects (or Members):
 	- **Definition:** Static objects (fields or methods) belong to the **class** rather than any specific object of the class.
 	- **Shared:** There is only **one copy** of a static object shared among all instances of the class.
@@ -235,6 +238,129 @@ public class Rectangle {
 #### `this` Keyword
 The **`this`** keyword in Java is a reference variable that refers to the **current object** of the class. It is an important feature in Java, particularly in object-oriented programming, as it allows methods and constructors to interact with the object that invoked them.
 
+***Current Object**: The **current object** refers to the instance of a class on which a method or constructor is currently being invoked. In object-oriented programming, every time you create an object and call its methods, the object itself becomes the context, or the current object, for those method calls.*
+
+##### Usage of `this` program
+1. **Refer the current object's instance variables**
+	- `this` is used to resolve naming conflicts between instance variables and method parameters or local variables with the same.
+```java
+class Person {
+    String name;
+
+    // Constructor with parameter same as instance variable
+    Person(String name) {
+        this.name = name; // 'this.name' refers to the instance variable
+    }
+
+    void display() {
+        System.out.println("Name: " + this.name);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person("Alice");
+        person.display(); // Output: Name: Alice
+    }
+}
+```
+
+2. **Call Another Constructor in the Same Class**
+	- Use `this()` to call another constructor of the same class.
+```java
+class Person {
+    String name;
+    int age;
+
+    // Default constructor
+    Person() {
+        this("Unknown", 0); // Calls the parameterized constructor
+    }
+
+    // Parameterized constructor
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void display() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person();
+        person.display(); // Output: Name: Unknown, Age: 0
+    }
+}
+```
+
+3. **Pass the current object as Argument**
+	- The `this` keyword can be passed as an argument to a method or constructor.
+```java
+class Person {
+    void print(Person obj) {
+        System.out.println("Method invoked with object: " + obj);
+    }
+
+    void call() {
+        print(this); // Passing the current object
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person();
+        person.call();
+    }
+}
+```
+
+4. **Return the Current Object**
+	- It can be used to return the current object from the method
+```java
+class Person {
+    Person getObject() {
+        return this; // Returns the current object
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person();
+        Person obj = person.getObject(); // Stores the current object
+        System.out.println(obj); // Output: Memory address of the object
+    }
+}
+```
+
+5. **Invoke a method in the same class**
+	- The `this` keyword can be used to explicitly call a method of the current class.
+```java
+class Person {
+    void show() {
+        System.out.println("Show method invoked");
+    }
+
+    void callShow() {
+        this.show(); // Explicitly calling show()
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person();
+        person.callShow(); // Output: Show method invoked
+    }
+}
+```
+
+##### Key points to remember about `this`
+- **`this` is always a reference for the current object.**
+- `this` can only be used on **non-static** methods or constructors since static methods do not operate on object instances.
+- When used in constructors, `this` must be the first statement. 
+ 
 #### `abstract` method in Java
 
 Interface = All the methods are `abstract`. Required for multiple inheritance.
