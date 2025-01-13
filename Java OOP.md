@@ -229,7 +229,7 @@ public class Scan {
 	System.out.println("Age: " + age); 
 	System.out.println("Salary: " + salary); 
 	
-	scanner.close(); // to terminate the scanner
+	sc.close(); // to terminate the scanner
 	}
 }
 ```
