@@ -149,7 +149,7 @@ The *Vacuum Cleaner Problem* is a classic example used in AI to demonstrate the 
 	- The goal is achieved when **both rooms are clean**, regardless of the vacuum's position.
 
 6. **Path Cost**:
-	- The cost of the solution is the **number of actions** taken to clean both rooms.
+	- Assume 1 for each action
 
 **Suppose:**
 - **Initial State**:
@@ -160,3 +160,24 @@ The *Vacuum Cleaner Problem* is a classic example used in AI to demonstrate the 
     2. Move to B → Vacuum in B, A = Clean, B = Dirty.
     3. Clean in B → A = Clean, B = Clean
 - **Path Cost**: 3 actions.
+
+##### 8 Puzzle (H.W.)
+Initial State (S):
+
+| 7   | 2   | 4   |
+| --- | --- | --- |
+| 5   |     | 6   |
+| 8   | 3   | 1   |
+
+Goal State (G):
+
+|     | 1   | 2   |
+| --- | --- | --- |
+| 3   | 4   | 5   |
+| 6   | 7   | 8   |
+
+
+#### Problem Searching
+After formulating the problem, we have to *search* for a solution. There are two types of searching mechanisms:
+- Informed
+- Uninformed
