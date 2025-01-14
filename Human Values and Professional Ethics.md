@@ -33,7 +33,19 @@ The term **ethics** refers to a set of principles or rules that define what is m
 
 ### Basic differences between Ethics and Morals
 
-| Ethics                                                                                                                     | Morals                                                                                   |
+| **Ethics**                                                                                                                 | **Morals**                                                                               |
 | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | More systematic and oftened codified, focusing on societal and professional standards.                                     | In moral, personal and subjective, reflective individual believes about write and wrong. |
 | They server us a guide to conduct that ensures fairness, justice and accountability in both personal and societal context. |                                                                                          |
+
+###### What is the relevance of moral ethics of values in promoting a scientific temper?
+The scientific temper lies in their capacity of providing a guiding framework for responsible and meaningful scientific applications. 
+*Scientific temper* as defined by relation and evidence based thinking thrives in an environment where principals of morality, ethical responsibility and human values are deeply embedded.
+1. **Ethical foundation of scientific enquiry**
+	- **Integrity in research**: Ethics foster honesty and transparency in scientific work, such as accurate reporting or finding, manipulating data in ethical way, avoiding plagiarism that uphold the integrity of research.
+	- **Objectivity and Open Mindset**: Ethical principals promotes a fair or unbiased approach through scientific exploration. Scientists are encourages to challenge personal biases, questions, assumptions and remain open to evidence that might contradict their initial hypothesis. 
+	- **Accountability in Science**: Ethical values remind scientists that their work might impact society and environment. Accountability ensures that researchers consider the potential consequence of their findings and balancing innovation with social responsibilities.
+2. **Moral Responsibilities in Application**
+	- **Avoiding harm, ensuring safety:** Morality helps guide decision on how science is used, preventing harm.
+	- **Fostering Sustainability:** Scientific progress does not deplete resources or harm ecosystem, thus safe guarding the future.
+	- **Bridging science and society:** Scientific temper is not just about individual relationality, but also about the integration into social values such as building trust, promoting relational and critical thinking. 
