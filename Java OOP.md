@@ -142,10 +142,19 @@ class A {
     - The class `A` can be reused in other programs to perform addition and multiplication.
 
 #### What is a **Constructor**?
-A special method 
+A *special* type of method which is used to *initialise* the object when it is first *created*. 
+It is special because it has the same name as that of the class name.
+A constructor **shouldn't have any return type, not even `void`.**
+##### How to declare a Constructor?
+`A obj = new A()`
+##### Types of Constructors:
+1. **Default Constructor** `A obj = new A();`
+	- Supplied by the compiler automatically
+2. **Parameterised Constructor** `A obj = new A(10, 20);`
+	- It needs to be defined explicitly by the programmer.
 
 #### How to write a program without the `main` method?
-It is possible using the `static {}` block. A `static` block is used before the `main` method or object creation that is executed **once** when the class is loaded into the memory. After the program is compiled, after going through the `static` block, the program tries to find the `main` method.
+It is possible using the `static {}` block. A `static` block is used before the `main` method or object creation that is executed **once** when the class is loaded into the memory. After the program is compiled, after going through the `static` block, the program tries to find the `main` method. There may be numerous `static` blocks.
 
 So, in the program, it is possible to use the `static` block and exit the program as soon as the `static` block is executed. The program will compile itself, but there will be an error in the program, since the `main` method is not found.
 
@@ -300,7 +309,7 @@ public class Main {
 ```java
 class Person {
     String name;
-    int age;
+    int age;shouldn't have any return type
 
     // Default constructor
     Person() {
@@ -396,7 +405,7 @@ The **`abstract`** keyword in Java is used to define classes and methods that ar
 
 When the user declares an **abstract class**, a plan is set up for what all the objects created from its subclasses will have in common. Subclasses then *"fill in the blanks"* to create specific types of objects.
 
-##### Key points about `abstract` keyword:
+##### Usage of `abstract` keyword:
 1. **Abstract Classes**: 
 	- An abstract class is a class which cannot be instantiated (i.e. objects cannot be created from it)
 	- It is meant to be extended by other classes.
@@ -465,3 +474,5 @@ public class Main {
 4. Subclasses are required to implement all the abstract methods of the superclass, unless the subclass is also declared as `abstract`.
 5. In the concept of inheritance, if a subclass does not implement all abstract methods, it must also be declared abstract.
 6. **Interface** is an `abstract` class where every method is also `abstract`.
+
+#### `final` Keyword
