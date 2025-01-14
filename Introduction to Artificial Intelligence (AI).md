@@ -119,5 +119,44 @@ Problem formulation has the following stages:
 	- *Step cost = C(S, a, S')*. In light of the diagram, here *Step cost = C(S, a1, a2)*
 	![[Pasted image 20250110102938.png]]
 
-**EXAMPLE: The Romania Travel Problem**
+##### Vacuum Cleaning Problem
+The *Vacuum Cleaner Problem* is a classic example used in AI to demonstrate the operation of **intelligent agents** in a simple, well-defined environment. It focuses on how an agent can perceive its environment, take actions, and achieve its goal efficiently.
 
+1. **Environment**
+	- The vacuum cleaner operates in a 2D world with **two rooms** (labelled A and B).
+	- Each room can be either:
+	    - **Clean**.
+	    - **Dirty**.
+	- The vacuum cleaner can be located in either room at any given time.
+
+2. **Initial State**:
+	- The environment's initial state is defined by:
+	    - The **position** of the vacuum cleaner (e.g., in room A).
+	    - The **cleanliness** of the two rooms (e.g., A = Dirty, B = Clean).
+
+3. **Actions**:
+	- The vacuum cleaner can perform the following actions:
+		- **Move Left**: If the vacuum is in room B, it can move to A.
+		- **Move Right**: If the vacuum is in room A, it can move to B.
+		- **Clean**: If the vacuum is in a dirty room, it cleans that room.
+
+4. **Successor Function**:
+	- The successor function specifies the resulting state after the agent performs an action.
+	- Example:
+	    - If the vacuum is in A and A is dirty, performing the "Clean" action will result in A = Clean.
+
+5. **Goal Test**:
+	- The goal is achieved when **both rooms are clean**, regardless of the vacuum's position.
+
+6. **Path Cost**:
+	- The cost of the solution is the **number of actions** taken to clean both rooms.
+
+**Suppose:**
+- **Initial State**:
+    - Vacuum cleaner is in A.
+    - A = Dirty, B = Dirty
+- **Solution**:
+    1. Clean in A → A = Clean, B = Dirty.
+    2. Move to B → Vacuum in B, A = Clean, B = Dirty.
+    3. Clean in B → A = Clean, B = Clean
+- **Path Cost**: 3 actions.
