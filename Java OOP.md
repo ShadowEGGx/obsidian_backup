@@ -464,3 +464,4 @@ public class Main {
 3. Abstract methods must be *declared within* an abstract class.
 4. Subclasses are required to implement all the abstract methods of the superclass, unless the subclass is also declared as `abstract`.
 5. In the concept of inheritance, if a subclass does not implement all abstract methods, it must also be declared abstract.
+6. **Interface** is an `abstract` class where every method is also `abstract`.
