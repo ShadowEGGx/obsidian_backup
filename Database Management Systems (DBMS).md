@@ -340,5 +340,52 @@ In DBMS, **keys** are *attributes* (or sets of attributes) used to uniquely iden
 	- Example: `Student_ID` and `Email` in a `Students` table could both serve as candidate keys.
 3. **Foreign Key**
 	- An attribute (or set of attributes) in one table that references the primary key of another table.
-	- Used to establish relationships between tables.
+	- Used to establish relationships between tables, i.e. maintains the referential integrity.
 	- Example: In an `Enrollments` table, `Student_ID` can be a foreign key referencing the `Student_ID` in the `Students` table.
+4. **Super Key**
+	- It is a combination of all possible attributes which can **uniquely identify two tuples** in a table.
+	- *Super set* of any *candidate key* is *super key*.
+	- Example: In a `Students` table, the super keys can be the `StudentID` and `Email`.
+
+***Question*:** Consider the following datasets. Analyse them.
+
+| Roll No. | Name | Address |
+| -------- | ---- | ------- |
+| 1        | A    | Mumbai  |
+| 2        | B    | Delhi   |
+| 3        | A    | Chennai |
+Referenced Table
+
+| Course ID | Course ID  | Roll No. |
+| --------- | ---------- | -------- |
+| C1        | DBMS       | 1        |
+| C2        | Networking | 2        |
+Referencing Table
+
+***Answer:*** 
+Referenced Table
+	1. **Insert** - No violation (*no problems occur when we add another data*)
+	2. **Delete** - May cause violation (*there may be a data which exists in the referencing table. E.g., we cannot delete Roll No. 1.*)
+		Solution: 
+			- On delete cascade (*i.e. if there is a data which has been already referenced as a foreign key, no deletion will occur.*)
+			- On delete set null (*i.e. sets the data in the referencing table as NULL. Cannot use this method when foreign key acts as the primary key.*)
+			- On delete no action
+	3. **Update** - May cause violation (*cannot randomly change any primary key data*)
+
+Referencing Table (*last stop*)
+	1. **Insert** - May cause violation
+	2. **Delete** - No violation
+	3. **Update** - May cause violation
+
+***Question:*** 
+Let $R_1(\text{a, b, c})$ & $R_2(\text{x, y, z})$ be two relations in which 'a' is foreign key in $R_1$ that refers to primary key of $R_2$. Consider 4 options: (a) Insert into $R_1$; (b) Insert into $R_2$; (c) Delete from $R_1$; (d) Delete from $R_2$.
+Which is correct regarding referential integrity:
+1. (a) and (b) will cause violation.
+2. (b) and (c) will cause violation.
+3. (c) and (d) will cause violation.
+4. **(d) and (a) will cause violation.** *Correct answer*
+
+##### Super Key Calculations
+###### How to determine the number of super keys in a dataset?
+***1. Question***
+Given that, R(A1, A2, A3, ... An) then how many candidate keys are possible?
