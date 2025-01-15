@@ -161,23 +161,54 @@ The *Vacuum Cleaner Problem* is a classic example used in AI to demonstrate the 
     3. Clean in B → A = Clean, B = Clean
 - **Path Cost**: 3 actions.
 
-##### 8 Puzzle (H.W.)
-Initial State (S):
+##### 8 Puzzle Problem
+**Initial State** (S):
 
 | 7   | 2   | 4   |
 | --- | --- | --- |
 | 5   |     | 6   |
 | 8   | 3   | 1   |
 
-Goal State (G):
+**Goal State** (G):
 
 |     | 1   | 2   |
 | --- | --- | --- |
 | 3   | 4   | 5   |
 | 6   | 7   | 8   |
 
+**Actions:**
+The possible actions for the agent (the blank space) are:
+1. **Up**: Move the blank space up (swap it with the tile above).
+2. **Down**: Move the blank space down (swap it with the tile below).
+3. **Left**: Move the blank space left (swap it with the tile to the left).
+4. **Right**: Move the blank space right (swap it with the tile to the right).
 
-#### Problem Searching
+**Transition Model:**
+The **transition model** specifies how the state changes when an action is applied.  
+For example:
+- If the blank space is at (1,2)(1, 2)(1,2) and the action is "Down," the new state will be:
+​7 | 5 | 8
+​2 | 6 |
+3​ | 4 | 1​
+​
+**State Space:**
+The **state space** is the set of all possible configurations of the 8-puzzle.  
+Each state is a unique permutation of the tiles {1, 2, 3, 4, 5, 6, 7, 8, ...}.
+A **path in the state space** is a sequence of states connected by actions (e.g., Up, Down, Left, Right) starting from the initial state and ending at the goal state.
+
+**Path Cost:**
+The **path cost** is the total cost of the sequence of actions taken to reach the goal state.
+- Each action (Up, Down, Left, Right) has a **step cost of 1**.
+- The **total path cost** is the number of moves required to solve the puzzle.
+
+
+#### Solution Searching
 After formulating the problem, we have to *search* for a solution. There are two types of searching mechanisms:
 - Informed
 - Uninformed
+
+##### Close World Assumption
+1. A statement that is true is also known to be true.
+2. All the necessary information about the problem domain is available in percept so that each state is a complete description of the world.
+3. No incomplete information at any point of time.
+4. 
