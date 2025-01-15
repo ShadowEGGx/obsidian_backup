@@ -178,3 +178,4 @@ step 3. NFA TT to DFA TT
 | ------ | ----- | ----- |
 | q0 =   |       |       |
 
+#### NFA to DFA without using ε closure
