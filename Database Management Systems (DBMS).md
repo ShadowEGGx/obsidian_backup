@@ -389,3 +389,4 @@ Which is correct regarding referential integrity:
 ###### How to determine the number of super keys in a dataset?
 ***1. Question***
 Given that, R(A1, A2, A3, ... An) then how many candidate keys are possible?
+
