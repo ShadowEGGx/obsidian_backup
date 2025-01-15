@@ -395,3 +395,5 @@ Which is correct regarding referential integrity:
 ***1. Question***
 Given that, R(A1, A2, A3, ... An) then how many candidate keys are possible?
 
+### Sample Questions
+What is the minimum number of tables required to represent the following ER model into relational model?
