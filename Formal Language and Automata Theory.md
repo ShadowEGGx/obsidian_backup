@@ -147,11 +147,9 @@ It defines a whole lot of different processes, like:
 
 There are 2 types of automata:
 1. **Deterministic Finite Automata (DFA)**
-	- 
 2. **Non-deterministic Finite Automata (NFA)**
 
 In finite automata, the symbols are:
-
 **Finite Automata has 5-tuples (Q, Σ, δ, qₒ, F), where:**
 1. Q = {set of states}
 2. Σ = {input alphabets}
@@ -179,3 +177,4 @@ step 3. NFA TT to DFA TT
 | States | a = 0 | a = 1 |
 | ------ | ----- | ----- |
 | q0 =   |       |       |
+
