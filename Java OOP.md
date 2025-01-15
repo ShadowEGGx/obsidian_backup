@@ -476,3 +476,13 @@ public class Main {
 6. **Interface** is an `abstract` class where every method is also `abstract`.
 
 #### `final` Keyword
+
+#### Method Overloading
+**Method Overloading** is a way to define a method multiple times with a list of different parameters.
+When the method gets called the compiler will check the number of parameters and type of parameters and order of parameters.
+In method overloading, the method *return type* **doesn't have** any role to play. It is also called as **compile-type polymorphism** or **early-binding/static-binding polymorphism.**
+
+##### Write a Java program to find the area of 3 geometrical shapes (cube, cylinder and cuboid) by implementing the concept of method overloading
+```Java
+
+```
