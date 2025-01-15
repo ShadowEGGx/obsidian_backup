@@ -211,4 +211,3 @@ After formulating the problem, we have to *search* for a solution. There are two
 1. A statement that is true is also known to be true.
 2. All the necessary information about the problem domain is available in percept so that each state is a complete description of the world.
 3. No incomplete information at any point of time.
-4. 
