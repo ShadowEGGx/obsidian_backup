@@ -283,8 +283,13 @@ For example, `Phone_No` can be more than one for a given student. In ER Diagram,
 An attribute that can be **derived from other attributes** of the entity type.
 For example, the `Age` of a student can be derived from their `DOB`. In ER Diagram, the derived attribute is represented by a *dashed oval*.
 
+###### Stored Attribute
+An attribute which cannot be derived, but has to be stored in the dataset.
+For example, `Name` of a student cannot be derived but has to be stored. In ER diagram, it is represented by a *single oval* (same as any other attribute).
+
 **DIAGRAM TO SHOW ATTRIBUTES FOR A `Student` ENTITY TYPE**
 ![[Pasted image 20250109205426.png]]
+
 
 #### Relationship Type, Relationship Set, Cardinality
 ##### Relationship Type
