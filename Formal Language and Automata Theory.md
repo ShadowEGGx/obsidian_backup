@@ -16,7 +16,7 @@
 - Push down automata (rules and applications)
 - Turing M/C
 
-
+### Communication Process
 **Formal Language:** A language which a computer can understand.
 
 There are 2 major start and end points in a Language: *Sender* and *Receiver.*
