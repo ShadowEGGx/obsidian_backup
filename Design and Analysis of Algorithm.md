@@ -141,3 +141,11 @@ for (i = 0; i < 1; i++) { // n+1
 | 2   | 0, 1, 2 | 2     |
 | ... |         |       |
 | k   | k + 1   | k     |
+
+
+#### Find time complexity
+#### Recurrence Relations
+Find the time complexity of the following recurrence relation:
+T(n) = 2T(n/2) + n for n > 1
+	= 1                  for n = 1
+
