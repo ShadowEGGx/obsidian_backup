@@ -211,3 +211,28 @@ After formulating the problem, we have to *search* for a solution. There are two
 1. A statement that is true is also known to be true.
 2. All the necessary information about the problem domain is available in percept so that each state is a complete description of the world.
 3. No incomplete information at any point of time.
+
+##### Formalising Searching
+1. **State Space** -> *G(V, E)*
+				V = {States}
+				E = {Actions}
+2. **Nodes** -> *State descriptions*
+		    Information about the parent nodes
+3. **Arcs** -> *Actions*
+		 Immediate predecessor and successor
+		 Fixed, non-negative cost (*state cost*)
+4. **Node Generation**
+5. **Node Expansion**
+6. **Start Node**
+7. **Goal**
+8. **Solution**
+9. **Cost of the solution** (*non negative numerical value*)
+
+##### State-space Search
+A process of **searching** through a state-space for a solution by making explicit a sufficient portion of an **implicit** space-space graph.
+
+When searching, the node can be one of the following categories:
+- **Not generated**
+- **OPEN: = {S}** (*generated but not expanded*)
+- **CLOSED: = {}** (*expanded*)
+
