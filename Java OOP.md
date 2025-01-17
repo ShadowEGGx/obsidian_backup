@@ -8,7 +8,7 @@ Java was created by **James Gosling** in the year 1995 at Sun Microsystems. It w
 - Java is OS independent. A java program can be run on any OS, irrespective of which OS it was originally created in.
 - Whereas a Java program cannot be run without the `main` method, net-based Java program (called an **applet**), that doesn't have a `main` method. But an applet program ALWAYS have can be executed in a Java-enabled web browser only.
 
-### Simple Java programs
+### A simple Java Program
 ```java
 class Program {
 	public static void main(String args[]) { // String is both a datatype and a class, so it is capital.
@@ -38,7 +38,7 @@ class Program {
 	- `out` is a static field in `System` class, and it is an object of the `PrintStream` class, which is another built-in class in Java. It is *static* since it belongs to the class `System` and not to any instance of it. 
 	- `println` is the method of the `PrintStream` class that is used to print messages and to move to a new line.
 
-#### Command Line Arguments
+### Command Line Arguments
 **Command-line arguments** in Java are inputs passed to the program when it is executed via the command line or terminal. They allow users to provide information or data to the program during runtime without requiring user input during program execution.
 
 ##### How to use them?
@@ -73,7 +73,7 @@ java AddNumbers 5 10
 Sum: 15
 ```
 
-#### Static and Non-Static Objects, Variables or Methods:
+### Static and Non-Static Objects, Variables or Methods:
 - ###### Static Objects (or Members):
 	- **Definition:** Static objects (fields or methods) belong to the **class** rather than any specific object of the class.
 	- **Shared:** There is only **one copy** of a static object shared among all instances of the class.
@@ -90,7 +90,7 @@ Sum: 15
 
 **Non-static methods** can call both static and non-static variables, but **static** methods can ONLY use static variables.
 
-#### Creation of an Object of a Class (*Instantiation* of a Class)
+### Creation of an Object of a Class (*Instantiation* of a Class)
 **An object is an *instance* of a class.**
 
 `A obj = new A();`
@@ -141,19 +141,19 @@ class A {
 - *Re-usability*:
     - The class `A` can be reused in other programs to perform addition and multiplication.
 
-#### What is a **Constructor**?
+### What is a **Constructor**?
 A *special* type of method which is used to *initialise* the object when it is first *created*. 
 It is special because it has the same name as that of the class name.
 A constructor **shouldn't have any return type, not even `void`.**
-##### How to declare a Constructor?
+#### How to declare a Constructor?
 `A obj = new A()`
-##### Types of Constructors:
+#### Types of Constructors:
 1. **Default Constructor** `A obj = new A();`
 	- Supplied by the compiler automatically
 2. **Parameterised Constructor** `A obj = new A(10, 20);`
 	- It needs to be defined explicitly by the programmer.
 
-#### How to write a program without the `main` method?
+### How to write a program without the `main` method?
 It is possible using the `static {}` block. A `static` block is used before the `main` method or object creation that is executed **once** when the class is loaded into the memory. After the program is compiled, after going through the `static` block, the program tries to find the `main` method. There may be numerous `static` blocks.
 
 So, in the program, it is possible to use the `static` block and exit the program as soon as the `static` block is executed. The program will compile itself, but there will be an error in the program, since the `main` method is not found.
@@ -167,7 +167,7 @@ public class hello {
 }
 ```
 
-#### Taking User Input
+### Taking User Input
 In Java, inputs can be taken from the user by the following ways:
 1. **Using `BufferedReader` class:** A system defined class that is included in the `java.io` package in Java.
 	- **How to use `BufferedReader` class?**
@@ -274,12 +274,12 @@ public class Rectangle {
 }
 ```
 
-#### `this` Keyword
+### `this` Keyword
 The **`this`** keyword in Java is a reference variable that refers to the **current object** of the class. It is an important feature in Java, particularly in object-oriented programming, as it allows methods and constructors to interact with the object that invoked them.
 
 ***Current Object**: The **current object** refers to the instance of a class on which a method or constructor is currently being invoked. In object-oriented programming, every time you create an object and call its methods, the object itself becomes the context, or the current object, for those method calls.*
 
-##### Usage of `this` program
+#### Usage of `this` program
 1. **Refer the current object's instance variables**
 	- `this` is used to resolve naming conflicts between instance variables and method parameters or local variables with the same.
 ```java
@@ -395,17 +395,17 @@ public class Main {
 }
 ```
 
-##### Key points to remember about `this`
+#### Key points to remember about `this`
 - **`this` is always a reference for the current object.**
 - `this` can only be used on **non-static** methods or constructors since static methods do not operate on object instances.
 - When used in constructors, `this` must be the first statement. 
  
-#### `abstract` keyword in Java
+### `abstract` keyword in Java
 The **`abstract`** keyword in Java is used to define classes and methods that are **incomplete** and are meant to be extended or implemented by other classes. It allows the user to establish a blueprint for classes, enforcing certain methods to be defined by any subclass.
 
 When the user declares an **abstract class**, a plan is set up for what all the objects created from its subclasses will have in common. Subclasses then *"fill in the blanks"* to create specific types of objects.
 
-##### Usage of `abstract` keyword:
+#### Usage of `abstract` keyword:
 1. **Abstract Classes**: 
 	- An abstract class is a class which cannot be instantiated (i.e. objects cannot be created from it)
 	- It is meant to be extended by other classes.
@@ -477,7 +477,7 @@ public class Main {
 
 #### `final` Keyword
 
-#### Method Overloading
+### Method Overloading
 **Method Overloading** is a way to define a method multiple times with a list of different parameters.
 When the method gets called the compiler will check the number of parameters and type of parameters and order of parameters.
 In method overloading, the method *return type* **doesn't have** any role to play. It is also called as **compile-type polymorphism** or **early-binding/static-binding polymorphism.**
@@ -486,3 +486,29 @@ In method overloading, the method *return type* **doesn't have** any role to pla
 ```Java
 
 ```
+
+### Constructor Overloading
+**Constructor overloading** in Java means defining multiple constructors in a single class, where each constructor has a different number or type of parameters. It allows the creation of objects with different initial values or configurations depending on how the constructor is called.
+
+### Inheritance
+In Java, it is possible to create a new class from an existing class without modifying the original one. This mechanism is known as inheritance.
+
+There are 5 types of inheritance.
+1. **Single Inheritance:** 
+	*Parent/Base/Super-class ---> Child/Derived/Sub-class.*
+	One parent class is producing one child class. [1-1 mapping].
+2. **Multilevel Inheritance:**
+	*Base Class (A) ---> Intermediate Base Class (B) ---> Ultimate Derived Class (C).*
+	More than one level is associated.
+3. **Multiple Inheritance:**
+	*Base Class 1 (A) --->*
+	*Base Class 2 (B) ---> One Child Class (D)*
+	*Base Class 3 (C) --->*
+	One child class, multiple parents. [Many to One mapping]
+4. **Hierarchical Inheritance:**
+	One parent class, multiple child classes. [One to Many mapping]
+					---> *Child class Class 1 (B)*
+	*One Parent Class (A)* ---> *Child Class 2 (C)*
+	                ---> *Child Class 3 (D)*
+5. **Hybrid Inheritance:**
+	A combination of two or more types of inheritance.
