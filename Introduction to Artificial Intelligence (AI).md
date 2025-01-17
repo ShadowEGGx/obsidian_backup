@@ -236,3 +236,52 @@ When searching, the node can be one of the following categories:
 - **OPEN: = {S}** (*generated but not expanded*)
 - **CLOSED: = {}** (*expanded*)
 
+##### Structure for state-space search
+**Node, N**
+	-> State description
+	-> Parents
+	-> Operator generating, N
+	-> Depth of N
+	-> Path cost from S -> N
+**OPEN list**
+	-> initialisation {S}
+**CLOSED list**
+	-> initialise
+	->
+
+##### Algorithm for state-space search
+```
+OPEN: = {S}; CLOSE = {}
+initialize loop
+	N = select(OPEN);
+	if N == goal
+		Exit with SUCCESS
+	else
+		expand (N)
+	until            // base case
+		OPEN = {}
+		exit with failure
+```
+
+##### Evaluation Criteria
+1. **Completeness**
+2. **Complexity**
+	- *Time Complexity* (no. of nodes expanded)
+	- *Space Complexity* (size of OPEN list)
+3. **Optimality/Admissibility**
+
+##### Uninformed Searching (blind searching)
+There are the following types of searching algorithms in this category. 
+- BFS (Breadth First Search)
+- DFS (Depth First Search)
+- UCS
+- BFIDS
+
+##### Informed Searching
+The following are the searching algorithms in this category:
+- Hill Climbing
+- Best First Search
+- Greedy Search
+- Beam Search
+- A
+- A*
