@@ -48,4 +48,10 @@ The scientific temper lies in their capacity of providing a guiding framework fo
 2. **Moral Responsibilities in Application**
 	- **Avoiding harm, ensuring safety:** Morality helps guide decision on how science is used, preventing harm.
 	- **Fostering Sustainability:** Scientific progress does not deplete resources or harm ecosystem, thus safe guarding the future.
-	- **Bridging science and society:** Scientific temper is not just about individual relationality, but also about the integration into social values such as building trust, promoting relational and critical thinking. 
+	- **Bridging science and society:** Scientific temper is not just about individual rationality, but also about the integration into social values such as building trust, promoting relational and critical thinking. 
+	- **Safeguarding against misuse of science:** 
+		- *Ethical Violation Prevention*: Unethical scientific practices such as human experimentation during war, ethical guidelines ensure that science respects human rights and dignity. 
+		- *Balancing progress with responsibility:* In fields like artificial intelligence, biotechnology and genetic engineering, ethical values act as guardrails ensuring that progress does not outpace moral considerations.
+	- **Inspiring purposeful innovation:** 
+		- *Serving Humanity:* Direct research towards addressing facing social challenges like diseases, climate change, etc.
+		- *Innovating for the greater good:* Science guided by ethics ensure that innovations such that renewable energy, technology focus on solving global issues like sustainability, 
