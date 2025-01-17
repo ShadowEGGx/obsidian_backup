@@ -157,6 +157,8 @@ In finite automata, the symbols are:
 4. qₒ = Initial state
 5. F = Final state
 
+#### NFA To DFA Conversion without using ε closure:
+
 ![[WhatsApp Image 2025-01-10 at 11.40.20 AM.jpeg]]
 In the above diagram
 Q = {$q_0, q_1, q_2, q_3$}
@@ -165,7 +167,7 @@ Q = {$q_0, q_1, q_2, q_3$}
 q = $q_0$
 F = {}
 
-1. canvart NFA to DFA
+1. canvart NFA to DFA 
    step 1: write in tapal format
    step 2: given NFA diagram to NFA transition table .
 
@@ -178,4 +180,4 @@ step 3. NFA TT to DFA TT
 | ------ | ----- | ----- |
 | q0 =   |       |       |
 
-#### NFA to DFA without using ε closure
+#### NFA to DFA using ε closure

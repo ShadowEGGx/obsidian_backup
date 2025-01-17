@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction to Artificial Intelligence (AI).md",
+                "file": "Formal Language and Automata Theory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction to Artificial Intelligence (AI)"
+              "title": "Formal Language and Automata Theory"
             }
           }
         ]
@@ -176,9 +176,9 @@
   },
   "active": "136e7f8782b84100",
   "lastOpenFiles": [
+    "Introduction to Artificial Intelligence (AI).md",
     "Untitled.canvas",
     "Formal Language and Automata Theory.md",
-    "Introduction to Artificial Intelligence (AI).md",
     "Human Values and Professional Ethics.md",
     "Database Management Systems (DBMS).md",
     "DBMS Lab.md",
