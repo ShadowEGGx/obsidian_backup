@@ -244,4 +244,16 @@ A **box plot** (also called a box-and-whisker plot) is a graphical representatio
 ###### Question:
 The marks of students in a maths class test are as follows:
 75, 80, 85, 92, 65, 78, 88, 98, 70, 72, 89, 91, 76, 79, 83, 89, 77, 87, 81
-Find the outliers, if any and then plot the box plot for the dataset.
+Find the outliers, if any and then plot the box plot for the dataset
+
+MCA: a data should be mcar format and misisng in random formed.
+   
+Advantages of CCA (complete case analysis)
+1. easy to implement as no data manipulation required
+2. preserves variable distribution
+
+Disadvantage of CCA
+1. it can exclude a large fraction of the original dataset
+2. excluded observation could be informative for the analysis
+3. the model in production the model knows how to handle the missing data
+4. 

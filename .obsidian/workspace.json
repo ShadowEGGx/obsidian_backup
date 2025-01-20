@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Database Management Systems (DBMS).md",
+                "file": "Exploratory Data Analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Database Management Systems (DBMS)"
+              "title": "Exploratory Data Analysis"
             }
           }
         ]
@@ -176,12 +176,12 @@
   },
   "active": "136e7f8782b84100",
   "lastOpenFiles": [
+    "Database Management Systems (DBMS).md",
     "Java OOP.md",
     "Human Values and Professional Ethics.md",
     "Formal Language and Automata Theory.md",
     "Introduction to Artificial Intelligence (AI).md",
     "Untitled.canvas",
-    "Database Management Systems (DBMS).md",
     "DBMS Lab.md",
     "Design and Analysis of Algorithm.md",
     "Exploratory Data Analysis.md",
