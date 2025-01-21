@@ -412,3 +412,8 @@ This is achieved by dividing the database into smaller, related tables and defin
 - **Improves Data Integrity**: Prevents inconsistencies when data is updated, deleted, or inserted.
 - **Enhances Query Efficiency**: Makes data retrieval faster and more logical.
 - **Maintains Flexibility**: Easier to modify the database structure without affecting existing data.
+
+Data modification anomalies can be categorised into 3 types
+Insertion Anomaly: Refers to when one cannot insert a new tuple into a relationship due to lack of data. 
+Deletion Anomaly: Refers to the situation where the deletion of data results unintended loss of some other important data.
+Updation Anomaly: Refers to the situation where the updation of a single data value requires multiple rows of data to be updated.
