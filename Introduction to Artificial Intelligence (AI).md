@@ -280,8 +280,30 @@ There are the following types of searching algorithms in this category.
 ##### Informed Searching
 The following are the searching algorithms in this category:
 - Hill Climbing
-- Best First Search
+- Breadth First Search
 - Greedy Search
 - Beam Search
 - A
 - A*
+
+###### Breadth Fast Search (BFS)
+Outline of BFS:
+- Always select from OPEN list with smallest depth
+- OPEN is generated using FIFO
+- OPEN := {} or GOAL is reached.
+
+Properties:
+1. Complete
+2. Optimal
+3. Time, Space complexity: O(b ^ d), where b = branching factor; d = depth
+
+A complete search tree where non-leaf nodes have *b* children and depth is *d*, the total number of nodes can be calculated using the formula: 
+$$
+b^0 + b^1 + b^2 + ... + b^d
+$$
+$$
+= 1 + b + b^2 + ... + b^d
+$$
+$$
+**(b^{d+1} - 1)/(b-1)** 
+$$
