@@ -288,7 +288,7 @@ class Person {
 
     // Constructor with parameter same as instance variable
     Person(String name) {
-        this.name = name; // 'this.name' refers to the instance variable
+        this.name = name; // 'this.name' refers to the current obj
     }
 
     void display() {
@@ -404,6 +404,7 @@ public class Main {
 The **`abstract`** keyword in Java is used to define classes and methods that are **incomplete** and are meant to be extended or implemented by other classes. It allows the user to establish a blueprint for classes, enforcing certain methods to be defined by any subclass.
 
 When the user declares an **abstract class**, a plan is set up for what all the objects created from its subclasses will have in common. Subclasses then *"fill in the blanks"* to create specific types of objects.
+**Makes *overriding* necessary.**
 
 #### Usage of `abstract` keyword:
 1. **Abstract Classes**: 
@@ -476,6 +477,7 @@ public class Main {
 6. **Interface** is an `abstract` class where every method is also `abstract`.
 
 #### `final` Keyword
+#### `implements` keyword
 
 ### Method Overloading
 **Method Overloading** is a way to define a method multiple times with a list of different parameters.
@@ -512,3 +514,10 @@ There are 5 types of inheritance.
 	                ---> *Child Class 3 (D)*
 5. **Hybrid Inheritance:**
 	A combination of two or more types of inheritance.
+
+###### Write a java program to implement the concept of single inheritance
+```java
+class Parent {
+	
+}
+```
