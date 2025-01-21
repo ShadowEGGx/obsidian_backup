@@ -397,3 +397,18 @@ Given that, R(A1, A2, A3, ... An) then how many candidate keys are possible?
 
 ### Sample Questions
 What is the minimum number of tables required to represent the following ER model into relational model?
+
+## Normalisation
+### What is Normalisation?
+**Normalisation** is the process of organising data in a database to:
+1. Minimise redundancy (duplicate data).
+2. Eliminate undesirable characteristics like insertion, update, and deletion anomalies.
+3. Ensure data integrity and consistency.
+
+This is achieved by dividing the database into smaller, related tables and defining relationships between them.
+
+### Why do we need it?
+- **Reduces Redundancy**: Saves storage space and ensures data isn't duplicated unnecessarily.
+- **Improves Data Integrity**: Prevents inconsistencies when data is updated, deleted, or inserted.
+- **Enhances Query Efficiency**: Makes data retrieval faster and more logical.
+- **Maintains Flexibility**: Easier to modify the database structure without affecting existing data.

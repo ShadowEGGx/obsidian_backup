@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploratory Data Analysis.md",
+                "file": "Database Management Systems (DBMS).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Exploratory Data Analysis"
+              "title": "Database Management Systems (DBMS)"
             }
           }
         ]
@@ -176,6 +176,7 @@
   },
   "active": "136e7f8782b84100",
   "lastOpenFiles": [
+    "Exploratory Data Analysis.md",
     "Database Management Systems (DBMS).md",
     "Java OOP.md",
     "Human Values and Professional Ethics.md",
@@ -184,7 +185,6 @@
     "Untitled.canvas",
     "DBMS Lab.md",
     "Design and Analysis of Algorithm.md",
-    "Exploratory Data Analysis.md",
     "DAA Lab.md",
     "WhatsApp Image 2025-01-10 at 11.40.20 AM.jpeg",
     "Pasted image 20250110105805.png",
