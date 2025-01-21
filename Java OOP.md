@@ -479,6 +479,8 @@ public class Main {
 #### `final` Keyword
 #### `implements` keyword
 #### `super` keyword
+It is used to call the *base-class (parent) constructor*. It must be the **first statement** inside the child class constructor. 
+The number and order of parameters of the `super` keyword must match with the formal parameters of the *base (parent) class constructor*.
 
 ### Method Overloading
 **Method Overloading** is a way to define a method multiple times with a list of different parameters.
