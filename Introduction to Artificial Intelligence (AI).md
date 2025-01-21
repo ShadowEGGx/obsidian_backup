@@ -280,13 +280,13 @@ There are the following types of searching algorithms in this category.
 ##### Informed Searching
 The following are the searching algorithms in this category:
 - Hill Climbing
-- Breadth First Search
+- Best Fast Search
 - Greedy Search
 - Beam Search
 - A
 - A*
 
-###### Breadth Fast Search (BFS)
+###### Breadth First Search (BFS)
 Outline of BFS:
 - Always select from OPEN list with smallest depth
 - OPEN is generated using FIFO
@@ -307,3 +307,4 @@ $$
 $$
 **(b^{d+1} - 1)/(b-1)** 
 $$
+###### Depth First Search (DFS)
