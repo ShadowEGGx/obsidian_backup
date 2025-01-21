@@ -295,7 +295,7 @@ Outline of BFS:
 Properties:
 1. Complete
 2. Optimal
-3. Time, Space complexity: O(b ^ d), where b = branching factor; d = depth
+(b^{d+1} - 1)/(b-1)3. Time, Space complexity: O(b ^ d), where b = branching factor; d = depth
 
 A complete search tree where non-leaf nodes have *b* children and depth is *d*, the total number of nodes can be calculated using the formula: 
 $$
@@ -308,3 +308,11 @@ $$
 **(b^{d+1} - 1)/(b-1)** 
 $$
 ###### Depth First Search (DFS)
+Outline of BFS:
+- Always select from OPEN list with greatest depth
+- OPEN is generated using LIFO
+- OPEN := {} or GOAL is reached.
+
+Properties:
+1. Incomplete
+2. 
