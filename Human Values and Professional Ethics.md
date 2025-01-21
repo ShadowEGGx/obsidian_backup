@@ -55,3 +55,12 @@ The scientific temper lies in their capacity of providing a guiding framework fo
 	- **Inspiring purposeful innovation:** 
 		- *Serving Humanity:* Direct research towards addressing facing social challenges like diseases, climate change, etc.
 		- *Innovating for the greater good:* Science guided by ethics ensure that innovations such that renewable energy, technology focus on solving global issues like sustainability, 
+
+### What is the theory of Action?
+The theory of action is that human actions are not random but are deeply influenced by an individual internal value, social context and intentions.
+Actions arise as the result of dynamic interplay between:
+- What we value (our core beliefs)
+- What we intent to do (our purpose or goals)
+- How we interpret the world around us (the context)
+
+Values such as honesty, compassion or justice form the ethical foundation for how people decide to act. The theory explores the process by which the values are converted into concrete actions and how this process is fulfilled, both internal and external factors.
