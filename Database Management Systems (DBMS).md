@@ -417,3 +417,11 @@ Data modification anomalies can be categorised into 3 types
 Insertion Anomaly: Refers to when one cannot insert a new tuple into a relationship due to lack of data. 
 Deletion Anomaly: Refers to the situation where the deletion of data results unintended loss of some other important data.
 Updation Anomaly: Refers to the situation where the updation of a single data value requires multiple rows of data to be updated.
+
+### First Normal Form (1NF)
+- Consider the following table consisting of details of professors of a college along with their domain specialisation.
+
+| E_ID | Name  | Designation         | Domain Specialisation |
+| ---- | ----- | ------------------- | --------------------- |
+| 101  | Anoop | Assistant Professor |                       |
+|      |       |                     |                       |
