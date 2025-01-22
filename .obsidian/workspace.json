@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction to Artificial Intelligence (AI).md",
+                "file": "Formal Language and Automata Theory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction to Artificial Intelligence (AI)"
+              "title": "Formal Language and Automata Theory"
             }
           }
         ]
@@ -176,15 +176,15 @@
   },
   "active": "136e7f8782b84100",
   "lastOpenFiles": [
+    "Design and Analysis of Algorithm.md",
+    "Introduction to Artificial Intelligence (AI).md",
     "Java OOP.md",
     "Human Values and Professional Ethics.md",
     "Database Management Systems (DBMS).md",
     "Exploratory Data Analysis.md",
     "Formal Language and Automata Theory.md",
-    "Introduction to Artificial Intelligence (AI).md",
     "Untitled.canvas",
     "DBMS Lab.md",
-    "Design and Analysis of Algorithm.md",
     "DAA Lab.md",
     "WhatsApp Image 2025-01-10 at 11.40.20 AM.jpeg",
     "Pasted image 20250110105805.png",
