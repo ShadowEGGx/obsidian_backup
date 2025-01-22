@@ -521,6 +521,102 @@ There are 5 types of inheritance.
 ###### Write a java program to implement the concept of single inheritance
 ```java
 class Parent {
-	
+    int a,b;
+    Parent(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+    void add() {
+        System.out.println("Addition = " + (a+b));
+    }
+    void multi() {
+        System.out.println("Multiplication = " + (a*b));
+    }
 }
+class Child extends Parent {
+    int x, y;
+    Child(int a, int b, int x, int y) {
+        super(a, b); // very first statement of the child constructor
+        this.x = x;
+        this.y = y;
+    }
+    void sub() {
+        System.out.println("Subtraction = " + (a-b));
+    }
+    void div() {
+        System.out.println("Division = " + (x/y));
+    }
+}
+class Single {
+    public static void main(String[] args) {
+        Child c = new Child(5, 7, 20, 4);
+        c.add();
+        c.multi();
+        c.sub();
+        c.div();
+    }
+}
+```
+
+###### Write a java program to implement the concept of multilevel inheritance
+```Java
+class Grandparent {
+	int p,q;
+	Grandparent(int p, int q) {
+		this.p = p;
+		this.q = q;
+	}
+	void mod() {
+		System.out.println("Modulus = " + (p%q));
+	}
+}
+class Parent extends Grandparent {
+	int a,b;
+	Parent(int p, int q, int a, int b) {
+		super(p, q);
+		this.a = a;
+		this.b = b;
+	}
+	void add() {
+		System.out.println("Addition = " + (a+b));
+	}
+	void multi() {
+		System.out.println("Multiplication = " + (a*b));
+	}
+}
+class Child extends Parent {
+	int x, y;
+	Child(int p, int q, int a, int b, int x, int y) {
+		super(p, q, a, b); // very first statement of the child constructor
+		this.x = x;
+		this.y = y;
+	}
+	void sub() {
+		System.out.println("Subtraction = " + (a-x));
+	}
+	void div() {
+		System.out.println("Division = " + (x/y));
+	}
+}
+
+class Multilevel {
+	public static void main(String[] args) {
+		Child c = new Child(5, 7, 20, 4, 20, 10);
+		c.add();
+		c.multi();
+		c.sub();
+		c.div();
+		c.mod();
+	}
+}
+```
+### Method Overriding
+In Java, it is possible to define a method once again in the `child` class, although the method has already been defined in the `parent` class. So there will be duplicate copy of the defined method in the `child` class. 
+- So when the method gets called by the **object** of the `child` class, the method which has been defined in the `child` class will respond to the call, i.e. the method defined in the parent class is being overridden by the method of the parent class.\
+
+By using the keyword `final` we can restrict method overriding. By using the keyword `abstract` we can make method overriding compulsory.
+
+###### Write a java program to make method overriding compulsory
+```Java
+
 ```
