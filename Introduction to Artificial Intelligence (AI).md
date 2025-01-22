@@ -280,7 +280,7 @@ There are the following types of searching algorithms in this category.
 ##### Informed Searching
 The following are the searching algorithms in this category:
 - Hill Climbing
-- Best Fast Search
+- Best First Search
 - Greedy Search
 - Beam Search
 - A
@@ -295,7 +295,7 @@ Outline of BFS:
 Properties:
 1. Complete
 2. Optimal
-(b^{d+1} - 1)/(b-1)3. Time, Space complexity: O(b ^ d), where b = branching factor; d = depth
+3. Time, Space complexity: O(b ^ d), where b = branching factor; d = depth
 
 A complete search tree where non-leaf nodes have *b* children and depth is *d*, the total number of nodes can be calculated using the formula: 
 $$
@@ -315,4 +315,15 @@ Outline of BFS:
 
 Properties:
 1. Incomplete
-2. 
+
+###### Informed Searching
+1. Domain specific information to select from the OPEN list
+2. Henristic function $h(n)$, is defined using the goodness of any solution to reach to goal.
+		$h(n)$ = estimated minimum cost path from $h$ to goal.
+		$h(n)>=0$, for all h.
+
+###### Best-first Search
+Ordering of OPEN nodes are done using f(n).
+f(h) = g(n) -> UCS
+f(h) = h(h) -> Greedy algorithm
+f(h) 
