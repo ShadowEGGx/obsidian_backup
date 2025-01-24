@@ -612,11 +612,32 @@ class Multilevel {
 ```
 ### Method Overriding
 In Java, it is possible to define a method once again in the `child` class, although the method has already been defined in the `parent` class. So there will be duplicate copy of the defined method in the `child` class. 
-- So when the method gets called by the **object** of the `child` class, the method which has been defined in the `child` class will respond to the call, i.e. the method defined in the parent class is being overridden by the method of the parent class.\
+- So when the method gets called by the **object** of the `child` class, the method which has been defined in the `child` class will respond to the call, i.e. the method defined in the parent class is being overridden by the method of the parent class.
 
-By using the keyword `final` we can restrict method overriding. By using the keyword `abstract` we can make method overriding compulsory.
+By using the keyword `final` we can *restrict* method overriding. By using the keyword `abstract` we can make method overriding *compulsory*.
 
 ###### Write a java program to make method overriding compulsory
 ```Java
+abstract class Shape {
+    abstract void draw();
+}
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Drawing a Circle.");
+    }
+}
+class Rectangle extends Shape {
+    void draw() {
+        System.out.println("Drawing a Rectangle.");
+    }
+}
 
+public class Override {
+    public static void main(String[] args) {
+        Shape circle = new Circle();
+        Shape rectangle = new Rectangle();
+        circle.draw();
+        rectangle.draw();
+    }
+}
 ```
