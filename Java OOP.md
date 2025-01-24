@@ -616,7 +616,7 @@ In Java, it is possible to define a method once again in the `child` class, alth
 
 By using the keyword `final` we can *restrict* method overriding. By using the keyword `abstract` we can make method overriding *compulsory*.
 
-###### Write a java program to make method overriding compulsory
+###### Write a java program to make method overriding compulsory/hierarchical inheritance
 ```Java
 abstract class Shape {
     abstract void draw();
