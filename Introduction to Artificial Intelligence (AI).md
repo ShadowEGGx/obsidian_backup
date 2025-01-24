@@ -327,3 +327,23 @@ Ordering of OPEN nodes are done using f(n).
 f(h) = g(n) -> UCS
 f(h) = h(h) -> Greedy algorithm
 f(h) 
+
+###### A* Algorithm
+For an Algorithm A*
+	h*(n) = actual cost from h to G
+	g*(n) = actual cost from S to h
+	f*(n) = g*(h) + h*(h)
+
+A* = a version of A with a constraint (condition) for h(n) $\leq$ h*(n)
+A* = optimal, h(n) $\leq$ h*(n) for every n.
+A* gives optimal solution at first attempt to reach G
+
+**Properties of A****
+- Null heurisitic, i.e. h(n) = 0 $\forall$ n
+- Better heuristic
+	$h_1(n) \leq h_2(n) \leq h_3(n) \leq ... \leq h_n(n)$
+	for all n (non-goal)
+	$h_2$ is a better heurisitic over h, $h_3$ is better than $h_2$, and so on.
+- Perfect heurisitc
+	Only works for the condition h(n) = h*(n)
+	
