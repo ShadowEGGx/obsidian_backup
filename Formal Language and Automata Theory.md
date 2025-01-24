@@ -1,14 +1,14 @@
 ## SYLLABUS
-- Introduction
-- Language, Grammar, String Creation (valid + non valid)
-- Derivation, Derivation Tree (Left most DT, Right most DT)
-- Ambiguous and Non-ambiguous grammar
+- **Introduction**
+- **Language, Grammar, String Creation (valid + non valid)**
+- **Derivation, Derivation Tree (Left most DT, Right most DT)**
+- **Ambiguous and Non-ambiguous grammar**
 - Mealy M/C and Moore M/C and convertion
-- NFA and DFA and conversion with & without (epsilon) closure.
+- **NFA and DFA and conversion with & without (epsilon) closure**.
 - Regular expression.
 - RE to Finite Automata
 - Finite automata to regular expression (Arden's theorem)
-- Finite automata process (testing table, testing graph, finite memory, loop-free or not
+- **Finite automata process (testing table, testing graph, finite memory, loop-free or not)**
 - Pumping lemma (rules 1, 2, 3)
 - CNF, GNF
 - CFG -> CNF -> GNF
