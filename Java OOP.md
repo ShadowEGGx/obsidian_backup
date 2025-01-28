@@ -476,6 +476,16 @@ public class Main {
 5. In the concept of inheritance, if a subclass does not implement all abstract methods, it must also be declared abstract.
 6. **Interface** is an `abstract` class where every method is also `abstract`.
 
+##### `abstract` vs `interface`
+
+| `abstract`                                                                                               | `interface`                                                    |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| At least one method need to be an `abstract`  method of an abstract class.                               | For an `interface` all the methods must be of `abstract` type. |
+| The instance variables of an `abstract` can be `final` or non-`final` and `static` or non-`static` type. | Variables of an `interface` must be of `final`. `static` type. |
+| `abstract` keyword is used to declare an `abstract` class.                                               | `interface` keyword is used to declare an `interface`          |
+| `abstract` cannot be treated as an `interface`.                                                          | `interface` can be treated as an `abstract` class.             |
+
+
 #### `final` Keyword
 #### `implements` keyword
 #### `super` keyword
