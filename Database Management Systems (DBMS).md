@@ -425,3 +425,6 @@ Updation Anomaly: Refers to the situation where the updation of a single data va
 | ---- | ----- | ------------------- | --------------------- |
 | 101  | Anoop | Assistant Professor |                       |
 |      |       |                     |                       |
+### Second Normal Form (2NF)
+##### Rules:
+1. Table or relation must 
