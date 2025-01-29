@@ -626,7 +626,7 @@ In Java, it is possible to define a method once again in the `child` class, alth
 
 By using the keyword `final` we can *restrict* method overriding. By using the keyword `abstract` we can make method overriding *compulsory*.
 
-###### Write a java program to make method overriding compulsory/hierarchical inheritance
+###### Write a java program to make method overriding compulsory
 ```Java
 abstract class Shape {
     abstract void draw();
@@ -649,5 +649,59 @@ public class Override {
         circle.draw();
         rectangle.draw();
     }
+}
+```
+
+###### Write a java program to implement Hierarchical Inheritance
+```Java
+
+class Animal {
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+
+class Cat extends Animal {
+    void meow() {
+        System.out.println("The cat meows.");
+    }
+}
+
+public class Hierarchical {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.eat();
+        dog.bark();
+        Cat cat = new Cat();
+        cat.eat();
+        cat.meow();
+    }
+}
+
+```
+
+###### Write a Java Program to implement Multiple Inheritance
+```Java
+interface Animal {
+    void eat();
+}
+interface Bird {
+    void fly();
+}
+class Bat implements Animal, Bird {
+    public void eat() {
+        System.out.println("Bat is eating.");}
+    public void fly() {
+        System.out.println("Bat is flying.");}
+    public static void main(String[] args) {
+        Bat bat = new Bat();
+        bat.eat();
+        bat.fly();}
 }
 ```
