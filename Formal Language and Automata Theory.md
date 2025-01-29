@@ -187,4 +187,4 @@ step 3. NFA TT to DFA TT
 
 ##### Regular Expression to Finite Automata Conversion
 **Rule 1**
-$R_1 + R_2$
+$R_1 + R_27$
