@@ -346,4 +346,13 @@ A* gives optimal solution at first attempt to reach G
 	$h_2$ is a better heurisitic over h, $h_3$ is better than $h_2$, and so on.
 - Perfect heurisitc
 	Only works for the condition h(n) = h*(n)
-	
+
+###### Iterative Improvement Search
+- starts with a guess
+- gradually improves towards goal
+- terminates with goal or no-goal
+**EXAMPLE:**
+1. *Hill Climbing:* 
+2. *Simulated Annealing*
+3. *Genetic Algorithm*
+
