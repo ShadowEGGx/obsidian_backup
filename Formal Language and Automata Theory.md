@@ -5,7 +5,7 @@
 - **Ambiguous and Non-ambiguous grammar**
 - Mealy M/C and Moore M/C and convertion
 - **NFA and DFA and conversion with & without (epsilon) closure**.
-- Regular expression.
+- **Regular expression.**
 - RE to Finite Automata
 - Finite automata to regular expression (Arden's theorem)
 - **Finite automata process (testing table, testing graph, finite memory, loop-free or not)**
@@ -167,8 +167,8 @@ Q = {$q_0, q_1, q_2, q_3$}
 q = $q_0$
 F = {}
 
-1. canvart NFA to DFA 
-   step 1: write in tapal format
+1. convert NFA to DFA 
+   step 1: write in tuple format
    step 2: given NFA diagram to NFA transition table .
 
 | States | a = 0 | a = 1 |
@@ -181,3 +181,10 @@ step 3. NFA TT to DFA TT
 | q0 =   |       |       |
 
 #### NFA to DFA using ε closure
+
+#### Regular Expression and conversion to Finite Automata
+**Regular Expression** is the high-level language that humans can understand and analyse but computers cannot. We need to convert a RE to FA so that computers can understand.
+
+##### Regular Expression to Finite Automata Conversion
+**Rule 1**
+$R_1 + R_2$
