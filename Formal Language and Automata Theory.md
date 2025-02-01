@@ -163,7 +163,7 @@ In finite automata, the symbols are:
 In the above diagram
 Q = {$q_0, q_1, q_2, q_3$}
 Σ = {0, 1}
-δ = 
+δ = (diagram)
 q = $q_0$
 F = {}
 
