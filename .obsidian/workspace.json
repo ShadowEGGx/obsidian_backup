@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Formal Language and Automata Theory.md",
+                "file": "Database Management Systems (DBMS).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Formal Language and Automata Theory"
+              "title": "Database Management Systems (DBMS)"
             }
           }
         ]
@@ -177,8 +177,8 @@
   },
   "active": "136e7f8782b84100",
   "lastOpenFiles": [
-    "Java OOP.md",
     "Formal Language and Automata Theory.md",
+    "Java OOP.md",
     "Introduction to Artificial Intelligence (AI).md",
     "Database Management Systems (DBMS).md",
     "Design and Analysis of Algorithm.md",
