@@ -64,3 +64,16 @@ Actions arise as the result of dynamic interplay between:
 - How we interpret the world around us (the context)
 
 Values such as honesty, compassion or justice form the ethical foundation for how people decide to act. The theory explores the process by which the values are converted into concrete actions and how this process is fulfilled, both internal and external factors.
+
+### What is **Engineering Ethics**?
+It refers to the moral and professional standard that guides engineers in their decision making and ensuring their work benefits of society, while minimising harm. It is a branch of applied ethics that address issues like safety, honesty, fairness, accountability and environmental responsibility in engineering practice. 
+
+#### Why is Engineering Ethics important?
+1. **Prevents disasters**: Ethical engineering avoid tragedies like bridge collapse, aviation failures, medical device malfunctions, etc.
+2. **Build public trust:** A strong ethical foundation ensures to build a public trust to any engineering institution or company.
+3. **Encourage innovations and responsibilities:** Engineers can develop any technologies while ensuring safety to match all the parameters. 
+4. **Ensure legal guidelines:** Following ethical guidelines helps engineers comply the legal regulations and avoid lawsuits. 
+5. **Public safety and welfare:** 
+6. **Honesty and integrity:** Engineers should provide truthful information, report any risk and failures with transparency. 
+7. **Professional responsibility:** In professional responsibility, engineers must follow law, industry standards, ethical guidelines, government policies, while fulfilling their duties.
+8. **Sustainability and environmental responsibility:** Engineers must consider the long-term impact of their work on the environment and promote sustainable solutions. 
