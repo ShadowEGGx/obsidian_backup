@@ -705,3 +705,43 @@ class Bat implements Animal, Bird {
         bat.fly();}
 }
 ```
+
+###### Write a Java Program to implement Hybrid Inheritance
+```Java
+class A {
+    void showA() {
+        System.out.println("Class A");
+    }
+}
+
+// multilevel (b extends a)
+class B extends A {
+    void showB() {
+        System.out.println("Class B");
+    }
+}
+
+// multiple
+interface C {
+    void showC();
+}
+
+// hybrid inheritance (d inherits b and implements c)
+class D extends B implements C {
+    public void showC() {
+        System.out.println("Interface C");
+    }
+    void showD() {
+        System.out.println("Class D");
+    }
+}
+public class Hybrid {
+    public static void main(String[] args) {
+        D obj = new D();
+        obj.showA();
+        obj.showB();
+        obj.showC();
+        obj.showD();
+    }
+}
+```
