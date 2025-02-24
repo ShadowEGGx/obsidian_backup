@@ -7,6 +7,7 @@ Java was created by **James Gosling** in the year 1995 at Sun Microsystems. It w
 #### Some overview on Java
 - Java is OS independent. A java program can be run on any OS, irrespective of which OS it was originally created in.
 - Whereas a Java program cannot be run without the `main` method, net-based Java program (called an **applet**), that doesn't have a `main` method. But an applet program ALWAYS have can be executed in a Java-enabled web browser only.
+- Every input in Java is considered as *string.* So we need to convert the string to the desired datatype.
 
 ### A simple Java Program
 ```java
