@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "d6e8d53a59ddbff8",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.7"
+            }
+          },
+          {
             "id": "23ec90aadfd44d1c",
             "type": "leaf",
             "state": {
@@ -35,7 +47,8 @@
               "title": "Untitled"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -189,7 +202,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "136e7f8782b84100",
+  "active": "d6e8d53a59ddbff8",
   "lastOpenFiles": [
     "Formal Language and Automata Theory.md",
     "Java OOP.md",
